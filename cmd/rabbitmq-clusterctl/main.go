@@ -28,7 +28,7 @@ func newController(c *cli.Context) *clusterctl.Controller {
 
 	return &clusterctl.Controller{
 		Node:                 fmt.Sprintf("rabbit@%s", hostname),
-		MasterController:     clusterctl.NullMasterController,
+		MasterController:     clusterctl.NewELBMasterController(os.Getenv("ELB_NAME")),
 		MembershipController: clusterctl.DefaultMembershipController,
 	}
 }
