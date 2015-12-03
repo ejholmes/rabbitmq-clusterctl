@@ -1,2 +1,2 @@
 build::
-	godep go build -o build/rabbit-clusterctl ./cmd/rabbit-clusterctl
+	godep go build -o build/rabbitmq-clusterctl ./cmd/rabbitmq-clusterctl

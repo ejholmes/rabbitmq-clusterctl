@@ -5,7 +5,7 @@ import (
 	"os"
 
 	"github.com/codegangsta/cli"
-	"github.com/remind101/rabbit-clusterctl"
+	"github.com/remind101/rabbitmq-clusterctl"
 )
 
 var commands = []cli.Command{
@@ -17,7 +17,7 @@ var commands = []cli.Command{
 
 func main() {
 	app := cli.NewApp()
-	app.Name = "rabbit-clusterctl"
+	app.Name = "rabbitmq-clusterctl"
 	app.Usage = "Perform rabbitmq node operations"
 	app.Commands = commands
 	app.Run(os.Args)
