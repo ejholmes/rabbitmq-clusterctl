@@ -24,7 +24,7 @@ $ rabbitmq-clusterctl join
 Removes the current node from the cluster.
 
 ```console
-$ rabbitmqctl-clusterctl remove
+$ rabbitmq-clusterctl remove
 ```
 
 ### Promote node
@@ -32,5 +32,5 @@ $ rabbitmqctl-clusterctl remove
 Promotes this node to be the new master. You should ensure that all queues are synchronized on the node before promoting.
 
 ```console
-$ rabbitmqctl-clusterctl promote
+$ rabbitmq-clusterctl promote
 ```
